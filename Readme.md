@@ -1,9 +1,10 @@
 # About
-Latest version of my CV, typesetted in Helvetica. I modified it from Adrien Friggeri's template which can be found here [http://www.latextemplates.com/template/friggeri-resume-cv].
+Latest version of my CV, typesetted in Helvetica. I modified it from Adrien Friggeri's template which can be found [here](http://www.latextemplates.com/template/friggeri-resume-cv).
 
 
 # Usage
 you will need xelatex and biber to compile.
+
 ```
 xelatex cv_template.tex && biber cv_template && xelatex cv_template.tex
 open cv_template.pdf
