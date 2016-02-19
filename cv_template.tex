@@ -1,0 +1,162 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% pdodd CV
+% XeLaTeX Template
+% Version 1.0 (5/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Adrien Friggeri (adrien@friggeri.net)
+% https://github.com/afriggeri/CV
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX and the bibliography, if used,
+% needs to be compiled with biber rather than bibtex.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{template-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
+\usepackage{amsthm,amssymb}
+\renewcommand{\blacksquare}{\rule{0.7em}{0.7em}}
+%%%%%%%%%%%%%%%%%%%%%%%% Setup the bibliography %%%%%%%%%%%%%%%%%%%%%%%%
+\ExecuteBibliographyOptions{maxnames=99,firstinits}
+\DeclareNameAlias{default}{last-first/first-last}
+\addbibresource{cv_bib.bib} % Specify the bibliography file to include
+                            % publications
+\boldname{Last}{First\bibnamedelima M}{F.~M.} % define your name here to
+                                             % make it a different style
+                                             % in the bib
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\header{First}{Last}{} %{\href{mailto:pdodd@umich.edu}{pdodd@umich.edu} $-$  303 $ \cdot $ 667 $ \cdot $ 8358} % Your name and current job title/field
+%----------------------------------------------------------------------------------------
+%	contact and skills section
+%----------------------------------------------------------------------------------------
+\vspace{-0.4cm}
+\begin{center}%[t]{0.48\textwidth}
+\begin{tabular}[tc]{r l}
+    500 S State St  $|$ & \
+    Ann Arbor, MI 48109 \\
+    \href{mailto:user@umich.edu}{user@umich.edu} $|$ & \
+    999 $\cdot$ 999 $\cdot$ 9999  \\
+\end{tabular}
+\end{center}
+% \hfill
+% \begin{minipage}[t]{0.48\textwidth}
+% \begin{flushright}
+%     { \bf Programming \& Skills } \par
+%     C++, Python, CUDA, \LaTeX\\
+%     Fortran 90/95, Matlab  \\ \& JavaScript
+% \end{flushright}
+% \end{minipage}
+% \vspace{2.5\parsep}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\section{Education}
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2007 -- 2012}
+{Bachelor of Science {\normalfont  Applied Mathematics and Chemical Engineering}}
+{University of Colorado, Boulder}
+{GPA: 3.57 \\
+Thesis: \emph{Effects of Polydispersity on Polymer Grafted Particle Chain Conformation}}
+%------------------------------------------------
+% \entry
+% {2007--2012}
+% {Bachelor of Science {\normalfont  Chemical Engineering }}
+% {University of Colorado, Boulder}
+% {GPA: 3.57}
+%------------------------------------------------
+\end{entrylist}
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\section{Professional Experience}
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2010 -- 2012}
+{Apple}
+{Cupertino, CA}
+{\emph{Software Intern } \\
+Did some code and stuff
+}
+%------------------------------------------------
+\end{entrylist}
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+\section{Awards}
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2011}
+{Research Fellowship}
+{}
+{Some description}
+%------------------------------------------------
+\end{entrylist}
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS SECTION
+%----------------------------------------------------------------------------------------
+\section{Peer Reviewed Publications}
+\defbibheading{subbibliography}[\refname]{\subsection{#1}}
+\printbibsection{article}{} % Print all articles from the bibliography
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+\goodbreak
+% \section{Presentations}
+\section{Contributed Talks}
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2015}
+{Some talk title}
+{Salt Lake City, UT}
+{\emph{Some Fall Meeting} \\ \small\addfontfeature{Color=lightgray} \bf{First Last,} \normalfont\addfontfeature{Color=lightgray} and any other people here. }
+%------------------------------------------------
+\end{entrylist}
+
+\section{Posters}
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2014}
+{Poster title}
+{Madison, WI}
+{\emph{the conference} \\
+\small\addfontfeature{Color=lightgray} \bf{First Last,} \normalfont\addfontfeature{Color=lightgray} and some others here.}
+%------------------------------------------------
+\end{entrylist}
+%----------------------------------------------------------------------------------------
+%	teaching and outreach section
+%----------------------------------------------------------------------------------------
+\goodbreak
+\section{Teaching and Outreach}
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2015}
+{Volunteered for Somthing}
+{Chicago, IL}
+{
+Volunteered at something and did something there.
+}
+%------------------------------------------------
+%------------------------------------------------
+\end{entrylist}
+\\
+\\
+%\small\bf{Scientific Interests:} \normalfont self-assembly, inverse design problems, complex networks, Monte Carlo, molecular dynamics, Markov state models, machine learning, HOOMD-Blue \\
+\bf{Skills \& Programming:} \normalfont C++, Python, CUDA, \LaTeX, Fortran 90/95, Matlab \& JavaScript
+
+\end{document}
